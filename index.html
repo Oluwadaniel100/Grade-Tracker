@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Grade Tracker</title>
+</head>
+<body>
+
+    <h1>Student Grade Tracker</h1>
+
+    <!-- Input Form -->
+    <div>
+        <input type="text" id="studentName" placeholder="Student Name">
+        <input type="number" id="studentGrade" placeholder="Grade (0-100)">
+        <button onclick="addStudent()">Add Student</button>
+        <p id="errorMsg" style="color: red;"></p>
+    </div>
+
+    <!-- Average Grade -->
+    <h2>Average Grade: <span id="averageGrade">N/A</span></h2>
+
+    <!-- Student Table -->
+    <table border="1" cellpadding="8" cellspacing="0">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Grade</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="studentTableBody">
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
